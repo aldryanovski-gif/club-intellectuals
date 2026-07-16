@@ -8,12 +8,12 @@ export const revalidate = 60;
 export default async function PostPage({
   params
 }: {
-  params: { locale: string; slug: string };
+  params: Promise<{ locale: string; slug: string }>;
 }) {
-  if (!isLocale(params.locale)) notFound();
-  const locale = params.locale;
+  const { locale, slug } = await params;
+  if (!isLocale(locale)) notFound();
   const dict = getDict(locale);
-  const post = await getPostBySlug(params.slug);
+  const post = await getPostBySlug(slug);
   if (!post) notFound();
 
   const title = locale === 'sk' && post.title_sk ? post.title_sk : post.title_en;

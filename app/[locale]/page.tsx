@@ -6,9 +6,9 @@ import { getPosts } from '@/lib/supabase';
 
 export const revalidate = 60;
 
-export default async function HomePage({ params }: { params: { locale: string } }) {
-  if (!isLocale(params.locale)) notFound();
-  const locale = params.locale;
+export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  if (!isLocale(locale)) notFound();
   const dict = getDict(locale);
 
   const [news, projects] = await Promise.all([getPosts('news', 3), getPosts('project', 3)]);

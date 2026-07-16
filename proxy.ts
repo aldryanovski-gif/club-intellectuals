@@ -2,7 +2,7 @@ import { NextResponse, type NextRequest } from 'next/server';
 
 const locales = ['en', 'sk'];
 
-export function middleware(req: NextRequest) {
+export function proxy(req: NextRequest) {
   const { pathname } = req.nextUrl;
   if (pathname.startsWith('/admin')) return;
   const hasLocale = locales.some(

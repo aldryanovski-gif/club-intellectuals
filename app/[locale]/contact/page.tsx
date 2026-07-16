@@ -2,9 +2,10 @@ import { notFound } from 'next/navigation';
 import ContactForm from '@/components/ContactForm';
 import { getDict, isLocale } from '@/lib/i18n';
 
-export default function ContactPage({ params }: { params: { locale: string } }) {
-  if (!isLocale(params.locale)) notFound();
-  const dict = getDict(params.locale);
+export default async function ContactPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  if (!isLocale(locale)) notFound();
+  const dict = getDict(locale);
 
   return (
     <div className="container">

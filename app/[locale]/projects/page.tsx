@@ -4,12 +4,13 @@ import { getDict, isLocale } from '@/lib/i18n';
 
 export const revalidate = 60;
 
-export default function ProjectsPage({ params }: { params: { locale: string } }) {
-  if (!isLocale(params.locale)) notFound();
-  const dict = getDict(params.locale);
+export default async function ProjectsPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  if (!isLocale(locale)) notFound();
+  const dict = getDict(locale);
   return (
     <PostListPage
-      locale={params.locale}
+      locale={locale}
       type="project"
       title={dict.posts.projectsTitle}
       lead={dict.posts.projectsLead}

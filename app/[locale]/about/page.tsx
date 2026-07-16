@@ -10,9 +10,10 @@ const erasmusProjects = [
   '2018-1-BG01-KA204-047980'
 ];
 
-export default function AboutPage({ params }: { params: { locale: string } }) {
-  if (!isLocale(params.locale)) notFound();
-  const dict = getDict(params.locale);
+export default async function AboutPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  if (!isLocale(locale)) notFound();
+  const dict = getDict(locale);
 
   return (
     <div className="container">
