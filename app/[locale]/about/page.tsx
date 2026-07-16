@@ -25,6 +25,8 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
         <p>{dict.about.p1}</p>
         <p>{dict.about.p2}</p>
         <p>{dict.about.p3}</p>
+        <p>{dict.about.p4}</p>
+        <p>{dict.about.p5}</p>
 
         <h2>{dict.about.teamTitle}</h2>
         <p>{dict.about.teamText}</p>
