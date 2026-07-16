@@ -1,0 +1,266 @@
+-- =============================================================
+-- Club Intellectuals — съдържание, пренесено от стария Wix сайт
+-- (clubintellectuals.com, архивирано на 16.07.2026)
+-- Изпълни СЛЕД schema.sql в: Supabase Dashboard -> SQL Editor
+-- Безопасно за повторно изпълнение: on conflict (slug) do nothing
+-- =============================================================
+
+-- ---------- Проект: Green Superheroes ----------
+insert into public.posts (type, slug, title_en, title_sk, excerpt_en, excerpt_sk, body_en, body_sk, external_url, published, created_at)
+values
+  ('project', 'green-superheroes',
+   'Club Intellectuals x Green Superheroes', 'Club Intellectuals x Green Superheroes',
+   'Developing a green mindset and sustainable competencies among youth through non-formal education.',
+   'Rozvoj zeleného myslenia a udržateľných kompetencií mládeže prostredníctvom neformálneho vzdelávania.',
+   'Green Superheroes is a transnational partnership initiative focused on developing a green mindset and sustainable competencies among young people through non-formal education using digital tools. Together with our partners — Innovative Transfer of Knowledge (Bulgaria) and Association BATT (Slovenia) — we created a toolbox with an innovative methodology, "Green skills and Peace through non-formal education", available in digital and printed formats and designed for youth workers, trainers and teachers.',
+   'Green Superheroes je nadnárodná partnerská iniciatíva zameraná na rozvoj zeleného myslenia a udržateľných kompetencií mladých ľudí prostredníctvom neformálneho vzdelávania s využitím digitálnych nástrojov. Spolu s partnermi — Innovative Transfer of Knowledge (Bulharsko) a Association BATT (Slovinsko) — sme vytvorili súbor nástrojov s inovatívnou metodikou „Zelené zručnosti a mier prostredníctvom neformálneho vzdelávania", dostupný v digitálnej aj tlačenej podobe, určený pre pracovníkov s mládežou, školiteľov a učiteľov.',
+   null, true, '2023-01-15')
+on conflict (slug) do nothing;
+
+-- ---------- Новини (2019–2022, оригинални дати в created_at) ----------
+insert into public.posts (type, slug, title_en, title_sk, excerpt_en, excerpt_sk, body_en, body_sk, published, created_at)
+values
+  ('news', 'eufit-presentation-democritus',
+   'EUFIT presented to more than 200 students at Democritus University', 'EUFIT predstavený viac ako 200 študentom na Demokritovej univerzite',
+   'Our partners shared the EUFIT methodology, its mission and values with students in Thrace.',
+   'Naši partneri predstavili študentom v Trácii metodiku EUFIT, jej poslanie a hodnoty.',
+   'On the 21st of November the EUFIT project was presented to more than 200 students at the Democritus University of Thrace. Our partners shared insights about the EUFIT methodology, its mission and values. The students were encouraged to try out the exercises and techniques and share their experience.',
+   'Dňa 21. novembra bol projekt EUFIT predstavený viac ako 200 študentom Demokritovej univerzity v Trácii. Naši partneri sa podelili o poznatky o metodike EUFIT, jej poslaní a hodnotách. Študenti si mohli vyskúšať cvičenia a techniky a podeliť sa o svoje skúsenosti.',
+   true, '2022-11-27'),
+
+  ('news', 'final-eufit-meeting-sofia',
+   'The final transnational EUFIT meeting was held in Sofia', 'Záverečné nadnárodné stretnutie projektu EUFIT sa konalo v Sofii',
+   '21 participants representing all project partners took part in the fourth and final meeting.',
+   'Na štvrtom a záverečnom stretnutí sa zúčastnilo 21 účastníkov zastupujúcich všetkých partnerov.',
+   'In total 21 participants, representing all project partners, took part in the fourth and final transnational meeting of the EUFIT project. During the meeting the outputs and products created in the implementation of the project were presented. Discussions about the results and the evaluation of the project were also held.',
+   'Na štvrtom a záverečnom nadnárodnom stretnutí projektu EUFIT sa zúčastnilo spolu 21 účastníkov zastupujúcich všetkých projektových partnerov. Počas stretnutia boli predstavené výstupy a produkty vytvorené počas realizácie projektu. Diskutovalo sa aj o výsledkoch a hodnotení projektu.',
+   true, '2022-10-21'),
+
+  ('news', 'befit-slovenia',
+   'Multiplier one day national sport event "BEFIT" in Slovenia', 'Národné športové podujatie „BEFIT" v Slovinsku',
+   'The BEFIT event in Slovenia was hosted by MTB klub Kranj as part of the EUFIT project.',
+   'Podujatie BEFIT v Slovinsku hostil MTB klub Kranj v rámci projektu EUFIT.',
+   'The multiplier one day national sport event "BEFIT" in Slovenia was held on the 22nd of October 2022. The event is part of the EUFIT project and was hosted by MTB klub Kranj. This project is a collaboration of 5 partnering organizations from Bulgaria, Greece, Slovakia, Slovenia and Croatia.',
+   'Jednodňové národné športové podujatie „BEFIT" v Slovinsku sa konalo 22. októbra 2022. Podujatie je súčasťou projektu EUFIT a hostil ho MTB klub Kranj. Projekt je spoluprácou piatich partnerských organizácií z Bulharska, Grécka, Slovenska, Slovinska a Chorvátska.',
+   true, '2022-10-15'),
+
+  ('news', 'eufit-methodology-practice',
+   'EUFIT methodology in practice', 'Metodika EUFIT v praxi',
+   'Our partners from Pannonian Challenge presented the EUFIT platform at an accounting office.',
+   'Naši partneri z Pannonian Challenge predstavili platformu EUFIT v účtovníckej kancelárii.',
+   'Our partners from Pannonian Challenge held a small pop-up event at an accounting office where they presented the EUFIT platform and showed the developed methodology. A few words they shared with us: "We definitely had fun during our little demonstration and the exercises have been rated as really good by our ladies."',
+   'Naši partneri z Pannonian Challenge usporiadali malé pop-up podujatie v účtovníckej kancelárii, kde predstavili platformu EUFIT a ukázali vyvinutú metodiku. Ako nám napísali: „Počas našej malej ukážky sme sa určite zabavili a cvičenia boli našimi dámami hodnotené ako veľmi dobré."',
+   true, '2022-10-11'),
+
+  ('news', 'three-desk-exercises',
+   'Three desk exercises for working professionals', 'Tri cvičenia pri stole pre pracujúcich',
+   'Take a healthy break and move your muscles a little bit.',
+   'Doprajte si zdravú prestávku a trochu rozhýbte svaly.',
+   'Today we are sharing with you three exercises you can do while you are working at your desk. Take a "healthy" break and move your muscles a little bit. The plank is one of the best core exercises.',
+   'Dnes sa s vami delíme o tri cvičenia, ktoré môžete robiť počas práce pri stole. Doprajte si „zdravú" prestávku a trochu rozhýbte svaly. Plank je jedno z najlepších cvičení na stred tela.',
+   true, '2022-10-08'),
+
+  ('news', 'sofia-befit-250',
+   'Sofia BEFIT attracted over 250 participants', 'Sofijský BEFIT prilákal viac ako 250 účastníkov',
+   'The EUFIT platform and methodology were presented in detail in Sofia.',
+   'Platforma a metodika EUFIT boli podrobne predstavené v Sofii.',
+   'Sofia BEFIT was visited by more than 250 people. The event was held on the 25th of September 2022 and the EUFIT project platform and methodology were presented in detail to more than 250 people.',
+   'Podujatie Sofia BEFIT navštívilo viac ako 250 ľudí. Konalo sa 25. septembra 2022 a platforma a metodika projektu EUFIT boli podrobne predstavené viac ako 250 ľuďom.',
+   true, '2022-10-06'),
+
+  ('news', 'eufit-results-croatia',
+   'EUFIT results presented in Croatia', 'Výsledky projektu EUFIT predstavené v Chorvátsku',
+   'The EUFIT Survey results, digital platform and exercise methodologies were shown to 50 participants.',
+   'Výsledky prieskumu EUFIT, digitálna platforma a metodiky cvičení boli predstavené 50 účastníkom.',
+   'On June 16th we held an event where we presented the results of the EUFIT project. We discussed the results of the EUFIT Survey and demonstrated the digital platform and exercise methodologies to 50 participants.',
+   'Dňa 16. júna sme usporiadali podujatie, na ktorom sme predstavili výsledky projektu EUFIT. Diskutovali sme o výsledkoch prieskumu EUFIT a 50 účastníkom sme predviedli digitálnu platformu a metodiky cvičení.',
+   true, '2022-06-22'),
+
+  ('news', 'digifit-second-meeting',
+   'The DIGIFIT platform discussed during the second project meeting', 'O platforme DIGIFIT sa rokovalo na druhom projektovom stretnutí',
+   'The second transnational EUFIT meeting was held in Osijek, Croatia.',
+   'Druhé nadnárodné stretnutie projektu EUFIT sa konalo v chorvátskom Osijeku.',
+   'The second transnational project meeting of the EUFIT project was held in Osijek, Croatia on the 10th–11th of June 2022, hosted by BK "Pannonian". The meeting consisted of two days — one day of discussion over the DIGIFIT platform and the EUFIT methodology.',
+   'Druhé nadnárodné projektové stretnutie projektu EUFIT sa konalo 10.–11. júna 2022 v chorvátskom Osijeku a hostil ho BK „Pannonian". Stretnutie trvalo dva dni — jeden deň bol venovaný diskusii o platforme DIGIFIT a metodike EUFIT.',
+   true, '2022-06-12'),
+
+  ('news', 'befit-greece',
+   'Multiplier one day national sport event "BEFIT" in Greece', 'Národné športové podujatie „BEFIT" v Grécku',
+   'More than 50 participants from universities, sport clubs and institutions joined in Komotini.',
+   'V Komotini sa zapojilo viac ako 50 účastníkov z univerzít, športových klubov a inštitúcií.',
+   'On 20th of May a multiplier event was held in Komotini, Greece. The event was visited by more than 50 participants representing different institutions, including university students, sport clubs, national sport organizations, university teachers, coaches and trainers.',
+   'Dňa 20. mája sa v gréckom Komotini konalo multiplikačné podujatie. Navštívilo ho viac ako 50 účastníkov z rôznych inštitúcií vrátane vysokoškolských študentov, športových klubov, národných športových organizácií, vysokoškolských učiteľov a trénerov.',
+   true, '2022-05-25'),
+
+  ('news', 'stay-fit-working-from-home',
+   'How to stay fit while working from home', 'Ako zostať fit pri práci z domu',
+   'Sit properly, use lumbar support, stretch and move around regularly.',
+   'Seďte správne, používajte bedrovú opierku, pretiahnite sa a pravidelne sa hýbte.',
+   'Sit properly. If you notice yourself slouching or slumping and later complain that your back hurts, you need to find a solution for that. Try using a lumbar support. Try some easy desk stretches and exercises. Get up and move around.',
+   'Seďte správne. Ak sa pristihnete, že sa hrbíte, a neskôr sa sťažujete na bolesť chrbta, treba to riešiť. Skúste bedrovú opierku. Vyskúšajte jednoduché naťahovacie cvičenia pri stole. Vstaňte a poprechádzajte sa.',
+   true, '2022-04-21'),
+
+  ('news', 'eufitme-coming-soon',
+   'EUFITME methodology coming soon', 'Metodika EUFITME už čoskoro',
+   'An innovative training methodology for physical activity while working or spending time indoors.',
+   'Inovatívna tréningová metodika pre pohybovú aktivitu počas práce alebo pobytu v interiéri.',
+   'The core of the EUFIT project is an innovative training methodology for physical activity while working or spending time indoors (EUFITME), which is a strategic planning document that identifies physical activity as a priority for EU citizens.',
+   'Jadrom projektu EUFIT je inovatívna tréningová metodika pre pohybovú aktivitu počas práce alebo pobytu v interiéri (EUFITME) — strategický plánovací dokument, ktorý označuje pohybovú aktivitu za prioritu pre občanov EÚ.',
+   true, '2022-01-18'),
+
+  ('news', 'stretching-habits',
+   'Building stretching habits for office workers', 'Budovanie návyku strečingu pre kancelárskych pracovníkov',
+   'Moving or stretching is a buildable habit — remember to breathe normally throughout.',
+   'Pohyb a strečing sú návyky, ktoré sa dajú vybudovať — nezabúdajte pri nich normálne dýchať.',
+   'Moving or stretching is a buildable habit. Remember to breathe normally throughout the stretches, and never hold your breath. Triceps stretches: raise your arm and bend it so that your hand reaches toward the opposite side.',
+   'Pohyb a strečing sú návyky, ktoré sa dajú vybudovať. Počas naťahovania nezabúdajte normálne dýchať a nikdy nezadržiavajte dych. Strečing tricepsov: zdvihnite ruku a ohnite ju tak, aby dlaň smerovala k opačnej strane.',
+   true, '2021-11-18'),
+
+  ('news', 'dont-forget-to-stretch',
+   'Don''t forget to stretch', 'Nezabúdajte na strečing',
+   'Workplace stretching may reduce pain by up to 72 percent.',
+   'Strečing na pracovisku môže znížiť bolesť až o 72 percent.',
+   'A review of stretching programs in workplaces found that stretching improved range of motion, posture, and provided stress relief. Periodic workplace stretching may reduce pain by up to 72 percent.',
+   'Prehľad strečingových programov na pracoviskách ukázal, že strečing zlepšuje rozsah pohybu, držanie tela a prináša úľavu od stresu. Pravidelný strečing na pracovisku môže znížiť bolesť až o 72 percent.',
+   true, '2021-11-04'),
+
+  ('news', 'sitting-disease-risks',
+   'Health risks of excessive sitting', 'Zdravotné riziká nadmerného sedenia',
+   'Too much sitting is linked to weight gain, heart disease, diabetes and other chronic conditions.',
+   'Prílišné sedenie súvisí s priberaním, srdcovými chorobami, cukrovkou a ďalšími chronickými ochoreniami.',
+   'Too much sitting can be blamed for health ailments such as weight gain, heart disease, diabetes, high blood pressure, and other chronic conditions. One (slightly alarming) study even found that people who sit all day have a 40% increased risk of dying.',
+   'Prílišné sedenie môže za zdravotné problémy ako priberanie, srdcové choroby, cukrovka, vysoký krvný tlak a ďalšie chronické ochorenia. Jedna (mierne znepokojujúca) štúdia dokonca zistila, že ľudia, ktorí celý deň sedia, majú o 40 % vyššie riziko úmrtia.',
+   true, '2021-10-22'),
+
+  ('news', 'top-3-posture-setups',
+   'Top 3 posture setups for computer work', 'Tri najlepšie polohy pri práci s počítačom',
+   'Our bodies need a variety of working postures: upright sitting, standing desk, reclined sitting.',
+   'Naše telo potrebuje rôzne pracovné polohy: vzpriamené sedenie, státie pri stole, polohu v záklone.',
+   'For years, there has been only one way to work on a computer, and that was to use it sitting at a desk. Our bodies need a variety of working postures: upright sitting, a standing desk, and reclined sitting (couch or floor).',
+   'Dlhé roky existoval len jeden spôsob práce s počítačom — v sede pri stole. Naše telo však potrebuje rôzne pracovné polohy: vzpriamené sedenie, státie pri výškovo nastaviteľnom stole a sedenie v záklone (pohovka alebo podlaha).',
+   true, '2021-08-30'),
+
+  ('news', 'seven-ways-breaks',
+   'Easy ways to add breaks to your working day', 'Jednoduché spôsoby, ako si spestriť pracovný deň prestávkami',
+   'Simple changes can offset the health damage of all that sitting.',
+   'Jednoduché zmeny môžu vyvážiť škody, ktoré spôsobuje dlhé sedenie.',
+   'Even if you are parked in front of a computer during the day, some simple changes can offset the health damage of all that sitting: walk over to colleagues, drink water, take regular breaks, and leave your desk for a walk or lunch.',
+   'Aj keď ste celý deň pri počítači, niekoľko jednoduchých zmien môže vyvážiť škody spôsobené sedením: zájdite za kolegami osobne, pite vodu, robte si pravidelné prestávky a odíďte od stola na prechádzku alebo obed.',
+   true, '2021-08-23'),
+
+  ('news', 'eufit-logo-brand',
+   'EUFIT new logo and brand identity', 'Nové logo a vizuálna identita EUFIT',
+   'The EUFIT project launched its new logo and brand identity.',
+   'Projekt EUFIT predstavil svoje nové logo a vizuálnu identitu.',
+   'The EUFIT project presented its new logo and brand identity.',
+   'Projekt EUFIT predstavil svoje nové logo a vizuálnu identitu.',
+   true, '2021-08-20'),
+
+  ('news', 'sitting-11-hours',
+   'We sit for an average of 11 hours a day', 'Sedíme v priemere 11 hodín denne',
+   'Even if we exercise regularly, our bodies aren''t designed for such low activity levels.',
+   'Aj keď pravidelne cvičíme, naše telo nie je stavané na takú nízku úroveň aktivity.',
+   'Did you know that even if we exercise regularly, most of us sit or recline for an average of 11 hours a day? Our bodies just aren''t designed to function well with such low levels of activity.',
+   'Vedeli ste, že aj keď pravidelne cvičíme, väčšina z nás sedí alebo leží v priemere 11 hodín denne? Naše telo jednoducho nie je stavané na to, aby dobre fungovalo pri takej nízkej úrovni aktivity.',
+   true, '2021-08-16'),
+
+  ('news', 'sedentary-work-risks',
+   'Chronic pain risks from desk-based work', 'Riziko chronickej bolesti pri práci za stolom',
+   'Sedentary days put people at risk of chronic pain and musculoskeletal disorders.',
+   'Sedavé dni zvyšujú riziko chronickej bolesti a porúch pohybového aparátu.',
+   'If you are like countless people, your job requires you to be seated at a desk for long periods of time. However, days spent primarily sedentary are putting people at risk of chronic pain and musculoskeletal disorders.',
+   'Ak ste ako nespočetné množstvo ľudí, vaša práca si vyžaduje dlhé sedenie za stolom. Dni strávené prevažne v sede však zvyšujú riziko chronickej bolesti a porúch pohybového aparátu.',
+   true, '2021-07-26'),
+
+  ('news', 'rethink-sitting-hours',
+   'Rethinking how many hours we sit every day', 'Prehodnoťme, koľko hodín denne sedíme',
+   'The main goal of EUFIT is to promote physical activity to a broad target group.',
+   'Hlavným cieľom projektu EUFIT je propagovať pohybovú aktivitu širokej cieľovej skupine.',
+   'Going forward we definitely should rethink how many hours we spend sitting every day. The main goal of "EUFIT" is to promote physical activity and its importance to a broad target group of people.',
+   'Do budúcna by sme určite mali prehodnotiť, koľko hodín denne trávime sedením. Hlavným cieľom projektu „EUFIT" je propagovať pohybovú aktivitu a jej význam širokej cieľovej skupine ľudí.',
+   true, '2021-07-15'),
+
+  ('news', 'five-ways-daily-movement',
+   'Five easy ways to increase daily movement', 'Päť jednoduchých spôsobov, ako sa viac hýbať',
+   'Small movements can have a significant impact on physical and mental health.',
+   'Aj malé pohyby môžu mať výrazný vplyv na fyzické a duševné zdravie.',
+   'Did you know that small movements can have a significant impact on both your physical and mental health? You can do most of them from the comfort of your home or work without changing into gym clothes.',
+   'Vedeli ste, že aj malé pohyby môžu mať výrazný vplyv na vaše fyzické aj duševné zdravie? Väčšinu z nich zvládnete z pohodlia domova či práce bez prezliekania do športového oblečenia.',
+   true, '2021-07-09'),
+
+  ('news', 'physical-activity-vs-exercise',
+   'Physical activity versus exercise', 'Pohybová aktivita verzus cvičenie',
+   'Exercise is a planned, structured and purposeful subcategory of physical activity.',
+   'Cvičenie je plánovaná, štruktúrovaná a cieľavedomá podkategória pohybovej aktivity.',
+   'Physical activity should not be mistaken for exercise. Exercise is a subcategory of physical activity that is planned, structured, repetitive, and purposeful. The EUFIT project aims to promote physical activity and a healthy lifestyle.',
+   'Pohybovú aktivitu si netreba zamieňať s cvičením. Cvičenie je podkategória pohybovej aktivity, ktorá je plánovaná, štruktúrovaná, opakovaná a cieľavedomá. Cieľom projektu EUFIT je propagovať pohybovú aktivitu a zdravý životný štýl.',
+   true, '2021-05-25'),
+
+  ('news', 'eufit-project-started',
+   'EUFIT project officially started', 'Projekt EUFIT oficiálne odštartoval',
+   'The first transnational meeting of the EUFIT project was held online.',
+   'Prvé nadnárodné stretnutie projektu EUFIT sa konalo online.',
+   'The EUFIT project officially started during the first transnational meeting, which was held online. The main goal of the "EUFIT" project is to promote physical activity and its importance to a broad target group of people.',
+   'Projekt EUFIT oficiálne odštartoval počas prvého nadnárodného stretnutia, ktoré sa konalo online. Hlavným cieľom projektu „EUFIT" je propagovať pohybovú aktivitu a jej význam širokej cieľovej skupine ľudí.',
+   true, '2021-04-14'),
+
+  ('news', 'creative-toolbox-award',
+   'Creative Toolbox for Adults wins 2nd prize at a European innovation competition', 'Kreatívna sada nástrojov pre vzdelávanie dospelých získala 2. cenu v európskej súťaži',
+   'Our Creative Toolbox for Adult Education won 2nd prize at a European competition for innovative tools.',
+   'Naša kreatívna sada nástrojov pre vzdelávanie dospelých získala 2. cenu v európskej súťaži o inovatívne nástroje.',
+   'We are very happy to announce that our Creative Toolbox for Adult Education won 2nd prize at a European competition for innovative tools.',
+   'S veľkou radosťou oznamujeme, že naša kreatívna sada nástrojov pre vzdelávanie dospelých (Creative Toolbox for Adults) získala na európskej súťaži o inovatívne nástroje 2. cenu.',
+   true, '2020-03-05'),
+
+  ('news', 'career-discovery-launch',
+   'Cover your needs, discover your career', 'Pokryte svoje potreby, objavte svoju kariéru',
+   'An innovative approach to personal and professional development.',
+   'Inovatívny prístup k osobnému a profesionálnemu rozvoju.',
+   'An innovative approach to professional development — this is the main goal of the project "Cover your needs, Discover your career", which was created as an innovative approach to support personal and professional development.',
+   'Inovatívny prístup k profesionálnemu rozvoju — to je hlavný cieľ projektu „Pokryte svoje potreby, objavte svoju kariéru" (Cover your needs, Discover your career), ktorý bol vytvorený ako inovatívny prístup na podporu osobného a profesionálneho rozvoja.',
+   true, '2019-10-11')
+on conflict (slug) do nothing;
+
+-- ---------- Събития ----------
+insert into public.posts (type, slug, title_en, title_sk, excerpt_en, excerpt_sk, body_en, body_sk, event_date, external_url, published, created_at)
+values
+  ('event', 'final-eufit-transnational-meeting',
+   'Final transnational EUFIT meeting in Sofia', 'Záverečné nadnárodné stretnutie EUFIT v Sofii',
+   'The fourth and final transnational meeting of the EUFIT project (No. 622998 – EPP-1-2020-1-BG-SPO-SCP).',
+   'Štvrté a záverečné nadnárodné stretnutie projektu EUFIT (č. 622998 – EPP-1-2020-1-BG-SPO-SCP).',
+   '21 participants, representing all project partners, took part in the fourth and final transnational meeting of the EUFIT project (No. 622998 – EPP-1-2020-1-BG-SPO-SCP). Partners discussed the outputs, the EUFIT digital platform, the innovative training methodology, results evaluation, and dissemination strategies for national events.',
+   'Na štvrtom a záverečnom nadnárodnom stretnutí projektu EUFIT (č. 622998 – EPP-1-2020-1-BG-SPO-SCP) sa zúčastnilo 21 účastníkov zastupujúcich všetkých partnerov. Partneri diskutovali o výstupoch, digitálnej platforme EUFIT, inovatívnej tréningovej metodike, hodnotení výsledkov a stratégiách šírenia na národných podujatiach.',
+   '2022-10-21', null, true, '2022-10-21'),
+
+  ('event', 'digifit-presentation-komotini',
+   'DIGIFIT platform officially presented at the third transnational meeting', 'Platforma DIGIFIT oficiálne predstavená na treťom nadnárodnom stretnutí',
+   'Meeting in Komotini, Greece, hosted by Democritus University of Thrace.',
+   'Stretnutie v gréckom Komotini hostila Demokritova univerzita v Trácii.',
+   'The third transnational project meeting was held in Komotini, Greece on June 23–24, 2022, hosted by the Democritus University of Thrace. The EUFIT digital platform — DIGIFIT, its content and features — was officially presented. Researchers and trainers discussed the innovative training methodology EUFITME and the approach for selecting participants from the target groups.',
+   'Tretie nadnárodné projektové stretnutie sa konalo 23.–24. júna 2022 v gréckom Komotini a hostila ho Demokritova univerzita v Trácii. Oficiálne bola predstavená digitálna platforma EUFIT — DIGIFIT, jej obsah a funkcie. Výskumníci a školitelia diskutovali o inovatívnej tréningovej metodike EUFITME a o prístupe k výberu účastníkov z cieľových skupín.',
+   '2022-06-23', null, true, '2022-06-23'),
+
+  ('event', 'second-meeting-osijek',
+   'Second project meeting in Osijek, Croatia', 'Druhé projektové stretnutie v chorvátskom Osijeku',
+   'Two-day meeting hosted by BK "Pannonian" on the DIGIFIT platform and EUFIT methodology.',
+   'Dvojdňové stretnutie hostené BK „Pannonian" o platforme DIGIFIT a metodike EUFIT.',
+   'A two-day meeting was held in Osijek, Croatia on June 10–11, 2022, hosted by BK "Pannonian". It included discussions on the DIGIFIT platform and the EUFIT methodology, plus a steering committee meeting.',
+   'Dvojdňové stretnutie sa konalo 10.–11. júna 2022 v chorvátskom Osijeku a hostil ho BK „Pannonian". Zahŕňalo diskusie o platforme DIGIFIT a metodike EUFIT, ako aj zasadnutie riadiaceho výboru.',
+   '2022-06-10', null, true, '2022-06-12'),
+
+  ('event', 'joint-staff-training-sofia',
+   'Joint staff training in Sofia — Cover your needs, discover your career!', 'Spoločné školenie v Sofii — Pokryte svoje potreby, objavte svoju kariéru!',
+   'Participants put themselves in the shoes of both an adult learner and an adult educator.',
+   'Účastníci si vyskúšali rolu dospelého študenta aj vzdelávateľa dospelých.',
+   'A training with our partners from Public Compass Association, held from October 30 to November 3, where participants spent these days putting themselves in the shoes of an adult learner but also an adult educator. Funded by the Erasmus+ Programme, aimed at older people in labor isolation.',
+   'Školenie s partnermi z Public Compass Association, ktoré sa konalo od 30. októbra do 3. novembra. Účastníci si počas týchto dní vyskúšali rolu dospelého študenta, ale aj vzdelávateľa dospelých. Financované z programu Erasmus+, zamerané na starších ľudí v pracovnej izolácii.',
+   '2019-10-30', 'https://www.facebook.com/Cover-your-needs-Discover-your-career-2297363970546839/', true, '2019-11-05'),
+
+  ('event', 'multiplier-event-bratislava',
+   'Multiplier event in Bratislava — Cover your needs, discover your career!', 'Multiplikačné podujatie v Bratislave — Pokryte svoje potreby, objavte svoju kariéru!',
+   'Our multiplier event took place here in Bratislava.',
+   'Naše multiplikačné podujatie sa konalo u nás v Bratislave.',
+   'In February we had our multiplier event here in Bratislava! We presented the results of the "Cover your needs, Discover your career" project.',
+   'Vo februári sme mali naše multiplikačné podujatie u nás v Bratislave! Predstavili sme výsledky projektu „Pokryte svoje potreby, objavte svoju kariéru".',
+   '2020-02-15', 'https://www.facebook.com/Cover-your-needs-Discover-your-career-2297363970546839/', true, '2020-02-20')
+on conflict (slug) do nothing;

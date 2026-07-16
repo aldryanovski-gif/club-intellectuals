@@ -43,7 +43,7 @@ const en = {
     experienceTitle: 'Project experience',
     experienceText: 'Since 2015 Club Intellectuals has taken part in multiple Erasmus+ projects, including:',
     teamTitle: 'Our people',
-    teamText: 'The members of the association combine decades of experience in educational and social services with young experts in information technology who create new educational tools and technologies.'
+    teamText: 'The members of the association combine decades of experience in educational and social services with young experts in information technology who create new educational tools and technologies. Mariana Janchev brings more than 30 years of experience in educational institutions and specializes in adult programs, while Victor Mirica, an IT college lecturer, develops digital skills programs for elderly and low-educated learners.'
   },
   posts: {
     newsTitle: 'News',
@@ -113,7 +113,7 @@ const sk: typeof en = {
     experienceTitle: 'Projektové skúsenosti',
     experienceText: 'Od roku 2015 sa Klub intelektuálov zúčastnil viacerých projektov Erasmus+, vrátane:',
     teamTitle: 'Naši ľudia',
-    teamText: 'Členovia združenia spájajú desaťročia skúseností vo vzdelávacích a sociálnych službách s mladými odborníkmi v oblasti informačných technológií, ktorí vytvárajú nové vzdelávacie nástroje a technológie.'
+    teamText: 'Členovia združenia spájajú desaťročia skúseností vo vzdelávacích a sociálnych službách s mladými odborníkmi v oblasti informačných technológií, ktorí vytvárajú nové vzdelávacie nástroje a technológie. Mariana Janchev prináša viac ako 30 rokov skúseností vo vzdelávacích inštitúciách a špecializuje sa na programy pre dospelých, zatiaľ čo Victor Mirica, lektor na IT škole, vyvíja programy digitálnych zručností pre seniorov a menej vzdelaných študentov.'
   },
   posts: {
     newsTitle: 'Novinky',
