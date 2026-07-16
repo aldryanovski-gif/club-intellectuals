@@ -1,8 +1,9 @@
-node_modules/
-dist/
-build/
+node_modules
+.next
 .env
 .env.local
-*.log
 .DS_Store
-Thumbs.db
+
+# локални неща, които не отиват в GitHub
+BackUp*/
+*.zip
