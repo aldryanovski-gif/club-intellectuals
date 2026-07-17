@@ -7,3 +7,4 @@ node_modules
 # локални неща, които не отиват в GitHub
 BackUp*/
 *.zip
+tsconfig.tsbuildinfo
