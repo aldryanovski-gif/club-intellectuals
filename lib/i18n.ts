@@ -21,7 +21,8 @@ const en = {
     title2: 'communities',
     lead: 'We are a non-governmental organization supporting non-formal education and lifelong learning for adults and youth across Slovakia and Europe.',
     ctaProjects: 'Explore our projects',
-    ctaAbout: 'Who we are'
+    ctaAbout: 'Who we are',
+    imageAlt: 'People learning together at a Club Intellectuals training'
   },
   home: {
     whoWeAre: 'Who we are',
@@ -37,6 +38,7 @@ const en = {
   },
   about: {
     title: 'A bit about us',
+    imageAlt: 'The Club Intellectuals community working together on ideas',
     p1: '"Club of Intellectuals" Association is a non-governmental organization from Slovakia created to support non-formal education and lifelong learning, with a focus on adults and youth. We organize local and cross-border training courses, exchange experience and good practices, enrich the knowledge and practical skills of participants through informal learning, and design and realize educational initiatives that promote societal change, inclusion and the equal participation of people with different past experience and competencies.',
     p2: 'Our main efforts are directed towards the transfer of knowledge, skills portfolio development and adult education through blended approaches featuring e-learning, non-formal education and innovative techniques. Over the years we have built networks with decision-makers, NGOs, chambers of commerce and umbrella organizations working with youth and adults, and we have experience in designing and supporting educational products and programs that are relevant to modern education and meet social needs at national and European level.',
     p3: 'We are focused on community development through lifelong learning, inclusion and local development, and we promote innovation and the sustainable development of communities through adult learning. Our experts have developed a variety of training programs inspired by innovative methodologies and pedagogical approaches, including problem-based and game-based learning on various subjects.',
@@ -93,7 +95,8 @@ const sk: typeof en = {
     title2: 'komunity',
     lead: 'Sme mimovládna organizácia podporujúca neformálne vzdelávanie a celoživotné učenie dospelých a mládeže na Slovensku aj v Európe.',
     ctaProjects: 'Naše projekty',
-    ctaAbout: 'Kto sme'
+    ctaAbout: 'Kto sme',
+    imageAlt: 'Ľudia, ktorí sa spoločne vzdelávajú na školení Klubu intelektuálov'
   },
   home: {
     whoWeAre: 'Kto sme',
@@ -109,6 +112,7 @@ const sk: typeof en = {
   },
   about: {
     title: 'Niečo o nás',
+    imageAlt: 'Komunita Klubu intelektuálov spoločne pracuje na nápadoch',
     p1: 'Združenie „Klub intelektuálov" je mimovládna organizácia zo Slovenska vytvorená na podporu neformálneho vzdelávania a celoživotného učenia so zameraním na dospelých a mládež. Organizujeme miestne a cezhraničné školenia, vymieňame si skúsenosti a dobrú prax, obohacujeme vedomosti a praktické zručnosti účastníkov prostredníctvom informálneho učenia a realizujeme vzdelávacie iniciatívy podporujúce spoločenské zmeny, inklúziu a rovnocennú účasť ľudí s rôznymi skúsenosťami a kompetenciami.',
     p2: 'Naše hlavné úsilie smeruje k prenosu vedomostí, rozvoju zručností a vzdelávaniu dospelých prostredníctvom kombinovaných prístupov zahŕňajúcich e-learning, neformálne vzdelávanie a inovatívne techniky. V priebehu rokov sme vybudovali siete s tvorcami rozhodnutí, mimovládnymi organizáciami, obchodnými komorami a strešnými organizáciami pracujúcimi s mládežou a dospelými a máme skúsenosti s navrhovaním a podporou vzdelávacích produktov a programov, ktoré zodpovedajú modernému vzdelávaniu a spoločenským potrebám na národnej i európskej úrovni.',
     p3: 'Zameriavame sa na rozvoj komunít prostredníctvom celoživotného učenia, inklúzie a miestneho rozvoja a podporujeme inovácie a udržateľný rozvoj komunít cez vzdelávanie dospelých. Naši experti vyvinuli rôzne vzdelávacie programy inšpirované inovatívnymi metodikami a pedagogickými prístupmi vrátane problémovo orientovaného učenia a učenia založeného na hrách.',

@@ -21,6 +21,8 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
         <p className="eyebrow">{dict.nav.about}</p>
         <h1>{dict.about.title}</h1>
       </header>
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src="/visuals/about.jpg" alt={dict.about.imageAlt} className="about-visual" />
       <div className="prose section" style={{ paddingTop: 0 }}>
         <p>{dict.about.p1}</p>
         <p>{dict.about.p2}</p>

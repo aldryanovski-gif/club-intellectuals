@@ -16,18 +16,26 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   return (
     <>
       <section className="hero container">
-        <p className="eyebrow">{dict.hero.eyebrow}</p>
-        <h1>
-          {dict.hero.title1} <span className="mark">{dict.hero.titleMark}</span> {dict.hero.title2}
-        </h1>
-        <p className="lead">{dict.hero.lead}</p>
-        <div className="btn-row">
-          <Link href={`/${locale}/projects`} className="btn btn-primary">
-            {dict.hero.ctaProjects}
-          </Link>
-          <Link href={`/${locale}/about`} className="btn btn-ghost">
-            {dict.hero.ctaAbout}
-          </Link>
+        <div className="hero-grid">
+          <div>
+            <p className="eyebrow">{dict.hero.eyebrow}</p>
+            <h1>
+              {dict.hero.title1} <span className="mark">{dict.hero.titleMark}</span> {dict.hero.title2}
+            </h1>
+            <p className="lead">{dict.hero.lead}</p>
+            <div className="btn-row">
+              <Link href={`/${locale}/projects`} className="btn btn-primary">
+                {dict.hero.ctaProjects}
+              </Link>
+              <Link href={`/${locale}/about`} className="btn btn-ghost">
+                {dict.hero.ctaAbout}
+              </Link>
+            </div>
+          </div>
+          <div className="hero-visual">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/visuals/hero-home.jpg" alt={dict.hero.imageAlt} fetchPriority="high" />
+          </div>
         </div>
       </section>
 
