@@ -38,9 +38,15 @@ export default async function PostPage({
         <img src={post.cover_url} alt="" className="article-cover" />
       )}
       <div className="prose section" style={{ paddingTop: 8 }}>
-        {body.split(/\n{2,}/).map((para, i) => (
-          <p key={i}>{para}</p>
-        ))}
+        {body.split(/\n{2,}/).map((para, i) => {
+          const line = para.trim();
+          // A paragraph that is just an image path/URL renders as a photo
+          if (/^(\/|https?:\/\/)\S+\.(jpe?g|png|gif|webp)$/i.test(line)) {
+            // eslint-disable-next-line @next/next/no-img-element
+            return <img key={i} src={line} alt="" className="article-cover" />;
+          }
+          return <p key={i}>{para}</p>;
+        })}
         {post.external_url && (
           <p>
             <a href={post.external_url} target="_blank" rel="noopener noreferrer" className="btn btn-primary">

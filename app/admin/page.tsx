@@ -326,6 +326,10 @@ function Dashboard({ email }: { email: string }) {
                 }}
               />
             </div>
+            <div className="full">
+              <label>Cover image URL (or paste a path instead of uploading)</label>
+              <input value={draft.cover_url} onChange={(e) => setDraft({ ...draft, cover_url: e.target.value })} placeholder="/archive/my-photo.jpg or https://…" />
+            </div>
             <div className="full" style={{ display: 'flex', gap: 14, alignItems: 'center', flexWrap: 'wrap' }}>
               <label style={{ display: 'flex', gap: 8, alignItems: 'center', margin: 0 }}>
                 <input
