@@ -14,6 +14,8 @@ export default async function EventsPage({ params }: { params: Promise<{ locale:
       type="event"
       title={dict.posts.eventsTitle}
       lead={dict.posts.eventsLead}
+      intro={dict.posts.eventsIntro}
+      introImage="/visuals/events.jpg"
     />
   );
 }

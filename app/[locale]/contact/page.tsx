@@ -18,8 +18,10 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
           <a href="mailto:clubintelectuals@gmail.com">clubintelectuals@gmail.com</a>
         </p>
       </header>
-      <section className="section" style={{ paddingTop: 8 }}>
+      <section className="section contact-grid" style={{ paddingTop: 8 }}>
         <ContactForm dict={dict} />
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/visuals/contact.jpg" alt={dict.contact.imageAlt} className="contact-visual" />
       </section>
     </div>
   );

@@ -14,6 +14,8 @@ export default async function ProjectsPage({ params }: { params: Promise<{ local
       type="project"
       title={dict.posts.projectsTitle}
       lead={dict.posts.projectsLead}
+      intro={dict.posts.projectsIntro}
+      introImage="/visuals/trainings.jpg"
     />
   );
 }

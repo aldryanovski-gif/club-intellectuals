@@ -54,8 +54,33 @@ const en = {
     newsLead: 'Updates from our projects and activities.',
     projectsTitle: 'Projects',
     projectsLead: 'Initiatives we design and implement with partners across Europe.',
+    projectsIntro: {
+      eyebrow: 'About our trainings',
+      heading: 'Learning. Connecting. Creating change.',
+      lead1: 'We design and deliver non-formal training experiences that inspire people, strengthen communities and drive meaningful impact.',
+      lead2: 'Our approach is practical, participatory and tailored to real-life challenges.',
+      imageAlt: 'A non-formal training session of Club Intellectuals',
+      features: [
+        { icon: '🛠️', title: 'Practical skills', text: 'We focus on tools and methods you can use immediately in your personal and professional life.' },
+        { icon: '💬', title: 'Open dialogue', text: 'We create a safe space for exchange, reflection and co-creation.' },
+        { icon: '🌱', title: 'Personal growth', text: 'We support you to discover your potential and build confidence to take action.' },
+        { icon: '❤️', title: 'Purpose & impact', text: 'We empower you to contribute to your community and create lasting change.' }
+      ]
+    },
     eventsTitle: 'Events',
     eventsLead: 'Trainings, exchanges and meetings — join us.',
+    eventsIntro: {
+      eyebrow: 'Our events',
+      heading: 'Meet. Exchange. Collaborate. Make an impact together.',
+      lead1: 'We organize trainings, exchanges and international partner meetings that bring people together, encourage dialogue and drive positive change.',
+      lead2: '',
+      imageAlt: 'An international partner meeting of Club Intellectuals',
+      features: [
+        { icon: '👥', title: 'Meet people', text: 'Connect with professionals and organizations from different backgrounds.' },
+        { icon: '💡', title: 'Share ideas', text: 'Exchange experiences, knowledge and good practices.' },
+        { icon: '🌍', title: 'Create impact', text: 'Work together on solutions that make a difference in communities.' }
+      ]
+    },
     readMore: 'Read more',
     visitSite: 'Visit project site',
     empty: 'Nothing published here yet — check back soon.',
@@ -71,7 +96,8 @@ const en = {
     sending: 'Sending…',
     ok: 'Thanks — your message was sent.',
     error: 'Something went wrong. Please try again or email us directly.',
-    location: 'Slovakia'
+    location: 'Slovakia',
+    imageAlt: 'Illustration of a friendly community sharing ideas'
   },
   footer: {
     tagline: 'Working today for a brighter and better tomorrow.',
@@ -128,8 +154,33 @@ const sk: typeof en = {
     newsLead: 'Aktuality z našich projektov a aktivít.',
     projectsTitle: 'Projekty',
     projectsLead: 'Iniciatívy, ktoré navrhujeme a realizujeme s partnermi po celej Európe.',
+    projectsIntro: {
+      eyebrow: 'O našich školeniach',
+      heading: 'Učíme sa. Spájame sa. Tvoríme zmenu.',
+      lead1: 'Navrhujeme a realizujeme neformálne vzdelávacie zážitky, ktoré inšpirujú ľudí, posilňujú komunity a prinášajú zmysluplný dopad.',
+      lead2: 'Náš prístup je praktický, participatívny a šitý na mieru skutočným životným výzvam.',
+      imageAlt: 'Neformálne školenie Klubu intelektuálov',
+      features: [
+        { icon: '🛠️', title: 'Praktické zručnosti', text: 'Zameriavame sa na nástroje a metódy, ktoré využijete okamžite v osobnom aj pracovnom živote.' },
+        { icon: '💬', title: 'Otvorený dialóg', text: 'Vytvárame bezpečný priestor na výmenu, reflexiu a spolutvorbu.' },
+        { icon: '🌱', title: 'Osobný rast', text: 'Podporujeme vás pri objavovaní potenciálu a budovaní sebadôvery konať.' },
+        { icon: '❤️', title: 'Zmysel a dopad', text: 'Umožňujeme vám prispieť vašej komunite a tvoriť trvalú zmenu.' }
+      ]
+    },
     eventsTitle: 'Podujatia',
     eventsLead: 'Školenia, výmeny a stretnutia — pridajte sa k nám.',
+    eventsIntro: {
+      eyebrow: 'Naše podujatia',
+      heading: 'Stretnite sa. Zdieľajte. Spolupracujte. Spoločne vytvárajme zmenu.',
+      lead1: 'Organizujeme školenia, výmeny a medzinárodné partnerské stretnutia, ktoré spájajú ľudí, podporujú dialóg a prinášajú pozitívnu zmenu.',
+      lead2: '',
+      imageAlt: 'Medzinárodné partnerské stretnutie Klubu intelektuálov',
+      features: [
+        { icon: '👥', title: 'Stretnite ľudí', text: 'Spojte sa s odborníkmi a organizáciami z rôznych prostredí.' },
+        { icon: '💡', title: 'Zdieľajte nápady', text: 'Vymieňajte si skúsenosti, vedomosti a dobrú prax.' },
+        { icon: '🌍', title: 'Tvorte dopad', text: 'Pracujte spoločne na riešeniach, ktoré menia komunity.' }
+      ]
+    },
     readMore: 'Čítať viac',
     visitSite: 'Navštíviť stránku projektu',
     empty: 'Zatiaľ tu nie je nič publikované — vráťte sa čoskoro.',
@@ -145,7 +196,8 @@ const sk: typeof en = {
     sending: 'Odosiela sa…',
     ok: 'Ďakujeme — vaša správa bola odoslaná.',
     error: 'Niečo sa pokazilo. Skúste to znova alebo nám napíšte priamo.',
-    location: 'Slovensko'
+    location: 'Slovensko',
+    imageAlt: 'Ilustrácia priateľskej komunity zdieľajúcej nápady'
   },
   footer: {
     tagline: 'Pracujeme dnes pre lepší a jasnejší zajtrajšok.',
