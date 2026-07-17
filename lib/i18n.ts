@@ -31,8 +31,8 @@ const en = {
     featuredProjects: 'Featured projects',
     upcomingEvents: 'Upcoming events',
     viewAll: 'View all',
-    quote: '"Everything that is done in the world is done by hope."',
-    quoteAuthor: 'Martin Luther',
+    quote: '"Ideas grow when people connect, share and act."',
+    quoteAuthor: '',
     contactTitle: 'Get in touch',
     contactLead: 'Have a question about our work, or want to collaborate on a project? Write to us.'
   },
@@ -105,8 +105,8 @@ const sk: typeof en = {
     featuredProjects: 'Vybrané projekty',
     upcomingEvents: 'Nadchádzajúce podujatia',
     viewAll: 'Zobraziť všetko',
-    quote: '„Všetko, čo sa na svete robí, sa robí s nádejou."',
-    quoteAuthor: 'Martin Luther',
+    quote: '„Nápady rastú, keď sa ľudia spájajú, zdieľajú a konajú."',
+    quoteAuthor: '',
     contactTitle: 'Kontaktujte nás',
     contactLead: 'Máte otázku o našej práci alebo chcete spolupracovať na projekte? Napíšte nám.'
   },

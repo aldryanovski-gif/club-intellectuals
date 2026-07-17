@@ -83,7 +83,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
 
       <section className="quote">
         <blockquote>{dict.home.quote}</blockquote>
-        <cite>— {dict.home.quoteAuthor}</cite>
+        {dict.home.quoteAuthor && <cite>— {dict.home.quoteAuthor}</cite>}
       </section>
 
       <section className="band section">
