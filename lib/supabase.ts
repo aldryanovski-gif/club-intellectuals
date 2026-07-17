@@ -45,7 +45,13 @@ export async function getPosts(type: PostType, limit = 50): Promise<Post[]> {
       .order('created_at', { ascending: false })
       .limit(limit);
     if (error) return [];
-    return data as Post[];
+    // Sort by the display date (event_date when set, created_at otherwise),
+    // so posts entered later with a historical event_date keep their place.
+    return (data as Post[]).sort((a, b) => {
+      const da = a.event_date || a.created_at.slice(0, 10);
+      const db = b.event_date || b.created_at.slice(0, 10);
+      return db.localeCompare(da);
+    });
   } catch {
     return [];
   }
